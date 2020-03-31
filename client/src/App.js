@@ -1,12 +1,15 @@
 import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Landing from './components/layout/landing/landingpage';
 
 const App = () => {
   return (
-    <Fragment>
-      <Landing />
-    </Fragment>
+    <Router>
+      <Fragment>
+        <Route exact path='/' component={Landing} />
+      </Fragment>
+    </Router>
   );
 };
 
