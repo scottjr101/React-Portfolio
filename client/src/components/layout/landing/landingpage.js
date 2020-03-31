@@ -9,7 +9,7 @@ const Landing = () => {
           <div className='mx-auto text-center'>
             <h1 className='mx-auto my-0'>Scott Ladd</h1>
             <div className='container d-flex justify-content-center px-0'>
-              <a href='#about' className='js-scroll-trigger'>
+              <a href='#' className='js-scroll-trigger'>
                 <div className='A-btn btn-two'>
                   <span>Enter</span>
                 </div>
