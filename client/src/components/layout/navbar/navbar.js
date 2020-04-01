@@ -22,7 +22,8 @@ const Navbar = () => {
             aria-label='Toggle navigation'
           >
             Menu
-            <i className='fas fa-bars' />
+            <i id='NavMenu' className='fas fa-bars pl-1' />
+            {/* <i className="fas fa-skull" /> */}
           </button>
           <div className='collapse navbar-collapse' id='navbarResponsive'>
             <ul className='navbar-nav ml-auto'>
