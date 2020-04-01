@@ -1,13 +1,17 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Landing from './components/layout/landing/landingpage';
+import Routes from './routing/routes';
+import './App.css';
 
 const App = () => {
   return (
     <Router>
       <Fragment>
-        <Route exact path='/' component={Landing} />
+        <Switch>
+          <Route exact path='/' component={Landing} />
+          <Route component={Routes} />
+        </Switch>
       </Fragment>
     </Router>
   );
