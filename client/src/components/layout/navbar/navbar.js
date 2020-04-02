@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -9,9 +10,9 @@ const Navbar = () => {
         id='mainNav'
       >
         <div className='container pl-0'>
-          <a className='navbar-brand js-scroll-trigger SL' href='#page-top'>
+          <Link className='navbar-brand js-scroll-trigger SL' to='/home'>
             Scott Ladd
-          </a>
+          </Link>
           <button
             className='navbar-toggler navbar-toggler-right'
             type='button'
@@ -29,12 +30,12 @@ const Navbar = () => {
             <ul className='navbar-nav ml-auto'>
               <li className='nav-item'>
                 <a className='nav-link js-scroll-trigger' href='#about'>
-                  About
+                  Blog
                 </a>
               </li>
               <li className='nav-item'>
                 <a className='nav-link js-scroll-trigger' href='#projects'>
-                  Projects
+                  Portfolio
                 </a>
               </li>
               <li className='nav-item'>
