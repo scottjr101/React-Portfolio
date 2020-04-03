@@ -62,7 +62,8 @@ const Home = () => {
                 I'm a Full Stack Developer with passion for learning new
                 frameworks. I continue to thrive in constantly changing
                 environments. My work reflects my ability to provide efficient
-                and clean code.
+                and clean code. I currently live Atlanta, Ga and I'm looking for a
+                coding job. Head over to my Blog page to get to know me better.
               </p>
             </div>
             <div className='col-xl-4 col-lg-5 p-3'>
