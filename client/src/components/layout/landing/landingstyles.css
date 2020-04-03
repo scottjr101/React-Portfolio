@@ -1,7 +1,13 @@
 /* Scott Ladd font for landing page */
 .SL {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Mr Dafoe', cursive;
+}
+
+@media (min-width: 992px) {
+  .SL {
+    font-size: 2.5rem;
+  }
 }
 
 /* Custom Button for landing page - Start */
