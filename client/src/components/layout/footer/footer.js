@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
+import Weather from "../weather/weather";
 
 const Footer = () => {
   return (
     <Fragment>
       {/* Signup Section */}
       <section id='signup' className='signup-section'>
-        <div className='container'>
+        {/* <div className='container'>
           <div className='row'>
             <div className='col-md-10 col-lg-8 mx-auto text-center'>
               <i className='far fa-paper-plane fa-2x mb-2 text-white' />
@@ -23,7 +24,8 @@ const Footer = () => {
               </form>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Weather />
       </section>
       {/* Contact Section */}
       <section className='contact-section bg-black'>
