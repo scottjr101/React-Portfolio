@@ -6,7 +6,7 @@ const Navbar = () => {
     <Fragment>
       {/* Navigation */}
       <nav
-        className='navbar navbar-expand-lg navbar-light fixed-top py-0 py-lg-2'
+        className='navbar navbar-expand-lg navbar-light fixed-top py-0'
         id='mainNav'
       >
         <div className='container pl-0'>
