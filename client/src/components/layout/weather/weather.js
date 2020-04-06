@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Icon } from '@iconify/react';
 import fahrenheitIcon from '@iconify/icons-wi/fahrenheit';
 import { WeatherContext } from '../../../context/weather/context';
-import './weatherstyles.css';
+// import './weatherstyles.css';
 import WeatherIcons from './img';
 
 const Weather = () => {
