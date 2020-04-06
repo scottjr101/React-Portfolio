@@ -16,14 +16,16 @@ app.use(express.json({ extended: false }));
 
 // Define API routes here
 app.post('/weather', async (req, res) => {
+  // Pull Lat and Long out of HTTP headers
   const { latitude, longitude } = req.body;
   try {
     const response = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${ApiKey}`
     );
     const data = await response.data;
-
+    // Send weather data from Openweather back to client side
     return res.json(data);
+    // Catch any errors
   } catch (error) {
     console.log(error);
   }
