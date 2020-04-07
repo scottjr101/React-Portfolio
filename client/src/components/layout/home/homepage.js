@@ -23,12 +23,6 @@ const Home = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-8 mx-auto'>
-              {/* <h2 className='text-white mb-4'>A bit about me</h2>
-              <p className='text-white-50'>
-                I'm a Full Stack Developer with passion for learning new
-                frameworks. I currently live Atlanta, Ga and I'm looking for a
-                coding job. Head over to my Blog page to get to know me better.
-              </p> */}
               <h3 className='text-white'>
                 This site was crafted with{' '}
                 <span role='img' aria-label='heart'>
@@ -62,8 +56,9 @@ const Home = () => {
                 I'm a Full Stack Developer with passion for learning new
                 frameworks. I continue to thrive in constantly changing
                 environments. My work reflects my ability to provide efficient
-                and clean code. I currently live Atlanta, Ga and I'm looking for a
-                coding job. Head over to my Blog page to get to know me better.
+                and clean code. I currently live Atlanta, Ga and I'm looking for
+                a coding job. Head over to my Blog page to get to know me
+                better.
               </p>
             </div>
             <div className='col-xl-4 col-lg-5 p-3'>

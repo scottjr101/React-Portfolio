@@ -23,11 +23,15 @@ app.post('/weather', async (req, res) => {
       `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${ApiKey}`
     );
     const data = await response.data;
+    // Debugging
+    console.log(`OpenWeatherMap API Call Successful!`);
     // Send weather data from Openweather back to client side
     return res.json(data);
     // Catch any errors
   } catch (error) {
-    console.log(error);
+    console.log(
+      `OpenWeatherMap API Call Failed, This Is Why ==> '${error.response.statusText}'`
+    );
   }
 });
 
