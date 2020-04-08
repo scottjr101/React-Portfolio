@@ -8,16 +8,7 @@ const WeatherProvider = (props) => {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const [weather, setWeather] = useState([]);
-
-  // Grab Lat and Long from user
-  const getCoords = () => {
-    !window.navigator.geolocation
-      ? alert('Geolocation is not supported by your browser')
-      : window.navigator.geolocation.getCurrentPosition((success) => {
-          setLatitude(success.coords.latitude);
-          setLongitude(success.coords.longitude);
-        });
-  };
+  const [toggle, setToggle] = useState(false);
 
   // Setup variables for fetch parameter
   const data = { latitude, longitude };
@@ -29,24 +20,37 @@ const WeatherProvider = (props) => {
     body: JSON.stringify(data),
   };
 
-  // Hook for ComponentDidUpdate, waiting for the lat and long to change.
-  useEffect(() => {
+  // Grab Lat and Long from user
+  const getCoords = () => {
+    setToggle(true);
+    console.log(latitude, longitude);
     latitude === null || longitude === null
-      ? console.log('Not Ready')
+      ? alert(
+          "You have't allowed this site to access your location, please do so now."
+        )
       : fetch('/weather', options)
           .then((res) => res.json())
           .then((result) => setWeather([result]))
           .catch((error) => console.log(error));
-    // Debugging
-    console.log('API Call');
+  };
+
+  // Grab Latitude and Longitude from user on page load.
+  useEffect(() => {
+    !window.navigator.geolocation
+      ? alert('Geolocation is not supported by your browser')
+      : window.navigator.geolocation.getCurrentPosition((success) => {
+          setLatitude(success.coords.latitude);
+          setLongitude(success.coords.longitude);
+        });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [latitude, longitude, setWeather]);
+  }, []);
 
   return (
     <WeatherContext.Provider
       value={{
         getLocation: getCoords,
         weather,
+        toggle,
       }}
     >
       {props.children}
