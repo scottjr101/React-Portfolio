@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from '../components/layout/home/homepage';
+import Portfolio from '../components/layout/portfolio/portpage';
 import Navbar from '../components/layout/navbar/navbar';
 import Footer from '../components/layout/footer/footer';
 import NoMatch from '../components/layout/nomatch/noMatch';
@@ -11,6 +12,7 @@ const Routes = () => {
       <Navbar />
       <Switch>
         <Route exact path='/home' component={Home} />
+        <Route exact path='/portfolio' component={Portfolio} />
         <Route component={NoMatch} />
       </Switch>
       <Footer />

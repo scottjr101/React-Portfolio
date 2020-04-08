@@ -24,22 +24,22 @@ const Navbar = () => {
           >
             Menu
             <i id='NavMenu' className='fas fa-bars pl-1' />
-            {/* <i className="fas fa-skull" /> */}
+            {/* Skull Icon */}
           </button>
           <div className='collapse navbar-collapse' id='navbarResponsive'>
             <ul className='navbar-nav ml-auto'>
               <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#about'>
+                <Link className='nav-link js-scroll-trigger' to='/blog'>
                   Blog
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#projects'>
+                <Link className='nav-link js-scroll-trigger' to='/portfolio'>
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#signup'>
+                <a className='nav-link js-scroll-trigger' href='#contact'>
                   Contact
                 </a>
               </li>
