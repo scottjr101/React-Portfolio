@@ -157,6 +157,14 @@
   border: 0;
 }
 
+.btn-md,
+.btn-group-md > .btn {
+  padding: 1rem 1.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
 .btn-primary {
   background-color: #64a19d;
 }
@@ -189,7 +197,7 @@
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .projects-section .featured-text {
@@ -277,12 +285,8 @@
   width: 3.5rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
-  line-height: 3.7rem;
+  line-height: 3.4rem;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.contact-section .font-size-6 {
-  font-size: 1.5rem;
 }
 
 .contact-section .social a:hover {
