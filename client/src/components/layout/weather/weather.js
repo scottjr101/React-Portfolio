@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react';
 import { Icon } from '@iconify/react';
 import fahrenheitIcon from '@iconify/icons-wi/fahrenheit';
+import dayStormShowers from '@iconify/icons-wi/day-storm-showers';
 import { WeatherContext } from '../../../context/weather/context';
-// import './weatherstyles.css';
-import WeatherIcons from './img';
 
 const Weather = () => {
   return (
@@ -11,30 +10,45 @@ const Weather = () => {
       <WeatherContext.Consumer>
         {(context) => (
           <div className='container'>
-            {context.weather.map((data) => (
-              <Fragment key={data.id}>
-                <div className='row mx-auto'>
-                  <div className='col text-white d-flex align-items-center justify-content-end'>
-                    <WeatherIcons />{' '}
+            {context.toggle === true ? (
+              context.weather.map((data) => (
+                <Fragment key={data.id}>
+                  <div className='row mx-auto'>
+                    <div className='col pr-2 text-white d-flex align-items-center justify-content-end'>
+                      <img
+                        className='weatherIcons'
+                        src={`http://download.spinetix.com/content/widgets/icons/weather/${data.weather[0].icon}.png`}
+                        alt='weather condition'
+                      />
+                    </div>
+                    <div className='col pl-2 text-white'>
+                      <h3 className='m-0'>
+                        {data.main.temp} <Icon icon={fahrenheitIcon} />
+                      </h3>
+                      <p className='text-uppercase my-1'>
+                        {data.weather[0].description}
+                      </p>
+                      <p className='text-uppercase my-1'>{data.name}</p>
+                    </div>
                   </div>
-                  <div className='col text-white'>
-                    <h1 className='m-0'>
-                      {data.main.temp} <Icon icon={fahrenheitIcon} />
-                    </h1>
-                    <p className='text-uppercase my-1'>
-                      {data.weather[0].description}
-                    </p>
-                    <p className='text-uppercase my-1'>{data.name}</p>
-                  </div>
+                </Fragment>
+              ))
+            ) : (
+              <div className='row mx-auto'>
+                <div className='col text-white text-center mb-2'>
+                  <h4 className='mb-2'>
+                    Click below to view the current weather in your area
+                  </h4>
+                  <Icon icon={dayStormShowers} height={60} />
                 </div>
-              </Fragment>
-            ))}
+              </div>
+            )}
             <div className='row mx-auto d-flex justify-content-center'>
               <button
-                className='btn btn-primary mt-3'
+                className='btn btn-primary btn-md mt-3'
                 onClick={context.getLocation}
               >
-                Current Weather
+                Click Here
               </button>
             </div>
           </div>
