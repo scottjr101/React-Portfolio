@@ -7,3 +7,32 @@
     rgba(22, 22, 22, 0.6) 100%
   );
 }
+
+.img-preview {
+  position: relative;
+}
+
+.img-preview .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.img-preview .overlay .btn {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.img-preview:hover .overlay {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.img-preview:hover .overlay .btn {
+  opacity: 1;
+}
