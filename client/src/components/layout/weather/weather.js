@@ -21,7 +21,7 @@ const Weather = () => {
                         alt='weather condition'
                       />
                     </div>
-                    <div className='col pl-2 text-white'>
+                    <div className='col pl-2 mt-2 text-white'>
                       <h3 className='m-0'>
                         {data.main.temp} <Icon icon={fahrenheitIcon} />
                       </h3>

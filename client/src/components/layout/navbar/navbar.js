@@ -29,6 +29,11 @@ const Navbar = () => {
           <div className='collapse navbar-collapse' id='navbarResponsive'>
             <ul className='navbar-nav ml-auto'>
               <li className='nav-item'>
+                <Link className='nav-link js-scroll-trigger' to='/home'>
+                  Home
+                </Link>
+              </li>
+              <li className='nav-item'>
                 <Link className='nav-link js-scroll-trigger' to='/blog'>
                   Blog
                 </Link>
