@@ -29,23 +29,26 @@ const NoMatch = () => {
             <h1 className='NotFound m-0'>404 Page Not Found</h1>
           </div>
         </div>
-        <div className='row justify-content-center'>
+        <div className='row no-gutters justify-content-center'>
           <div className='col-12 col-md-10 col-lg-6'>
-            <img className='img-fluid rounded' src={Cat} alt='Cat' />
+            <img className='img-fluid' src={Cat} alt='Cat' />
           </div>
-          <div className='col-12 col-md-10 col-lg-6 p-3 p-lg-2'>
-            <h3 className='text-center mb-4'>
-              You stumbled upon a bad route, but since you're here... take a
-              look at this cat and read a random Cat Fact!
-            </h3>
-            <hr className='break' />
-            {facts.map((D) => (
-              <Fragment key={D}>
-                <h4 className='text-center text-black-50 mt-4'>
-                  "{D.data[0].fact}"
-                </h4>
-              </Fragment>
-            ))}
+          <div className='bg-black col-12 col-md-10 col-lg-6 p-3 p-lg-2'>
+            <div className='d-flex h-100'>
+              <div className='w-100 my-auto text-center'>
+                <h3 className='text-white mb-4'>
+                  You stumbled upon a bad route, but since you're here... take a
+                  look at this cat and read a random{' '}
+                  <a href='https://catfact.ninja/'>Cat Fact</a>
+                </h3>
+                <hr className='break' />
+                {facts.map((D) => (
+                  <Fragment key={D}>
+                    <h4 className='text-white-50 mt-4'>"{D.data[0].fact}"</h4>
+                  </Fragment>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
