@@ -1,13 +1,3 @@
-.FadedHeader {
-  padding-top: 11rem;
-  background: linear-gradient(
-    to bottom,
-    #161616 0%,
-    rgba(22, 22, 22, 0.4) 50%,
-    rgba(22, 22, 22, 0.6) 100%
-  );
-}
-
 .img-preview {
   position: relative;
 }

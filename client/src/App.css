@@ -1,4 +1,28 @@
 /* weather.js */
 .weatherIcons {
-    height: 6.5rem;
+  height: 6.5rem;
+}
+
+/* Alt header */
+.FadedHeader {
+  height: 11rem;
+  background: linear-gradient(
+    to bottom,
+    rgb(22, 22, 22),
+    rgba(22, 22, 22, 0.8),
+    rgb(22, 22, 22, 0.6),
+    rgb(22, 22, 22, 0.3)
+  );
+}
+
+/* NoMatch */
+.NotFound {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3.5rem;
+}
+
+.break {
+  width: 10rem;
+  padding: 0 0 1 0rem;
+  border-bottom: 0.5rem solid #161616;
 }
