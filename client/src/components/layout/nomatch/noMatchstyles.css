@@ -1,0 +1,21 @@
+.NotFound {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .NotFound {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .NotFound {
+    font-size: 3.5rem;
+  }
+}
+
+.break {
+  width: 10rem;
+  border-bottom: 0.4rem solid #64a19d;
+}
