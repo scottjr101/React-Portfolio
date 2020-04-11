@@ -80,11 +80,23 @@
 }
 
 .ABhighlight {
-  max-width: 8.19rem;
+  width: 14rem;
   border-bottom: 0.3rem solid rgba(0, 0, 0, 0.55);
 }
 
-.Skhighlight {
-  max-width: 4.29rem;
-  border-bottom: 0.3rem solid rgba(0, 0, 0, 0.55);
+.skills {
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills {
+    font-size: 4rem;
+  }
 }
