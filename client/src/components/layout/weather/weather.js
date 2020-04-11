@@ -14,14 +14,14 @@ const Weather = () => {
               context.weather.map((data) => (
                 <Fragment key={data.id}>
                   <div className='row mx-auto'>
-                    <div className='col pr-2 text-white d-flex align-items-center justify-content-end'>
+                    <div className='col px-3 text-white d-flex align-items-center justify-content-end'>
                       <img
                         className='weatherIcons'
                         src={`http://download.spinetix.com/content/widgets/icons/weather/${data.weather[0].icon}.png`}
                         alt='weather condition'
                       />
                     </div>
-                    <div className='col pl-2 mt-2 text-white'>
+                    <div className='col px-1 mt-2 text-white'>
                       <h3 className='m-0'>
                         {data.main.temp} <Icon icon={fahrenheitIcon} />
                       </h3>
@@ -34,7 +34,7 @@ const Weather = () => {
                 </Fragment>
               ))
             ) : (
-              <div className='row mx-auto'>
+              <div className='row'>
                 <div className='col text-white text-center mb-2'>
                   <h4 className='mb-2'>
                     Click below to view the current weather in your area

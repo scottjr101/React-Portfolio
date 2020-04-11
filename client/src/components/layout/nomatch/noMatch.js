@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Cat from '../../../assets/imgs/404-cat.jpg';
+import './noMatchstyles.css';
 
 const NoMatch = () => {
   const [facts, setFacts] = useState([]);
@@ -11,7 +12,7 @@ const NoMatch = () => {
     },
   };
 
-  // Grab Latitude and Longitude from user on page load.
+  // Fetch cat facts on page load.
   useEffect(() => {
     fetch('https://catfact.ninja/facts', options)
       .then((res) => res.json())
@@ -30,11 +31,11 @@ const NoMatch = () => {
           </div>
         </div>
         <div className='row no-gutters justify-content-center'>
-          <div className='col-12 col-md-10 col-lg-6'>
+          <div className='col-12 col-lg-10 col-xl-6'>
             <img className='img-fluid' src={Cat} alt='Cat' />
           </div>
-          <div className='bg-black col-12 col-md-10 col-lg-6 p-3 p-lg-2'>
-            <div className='d-flex h-100'>
+          <div className='bg-black col-12 col-lg-10 col-xl-6 p-3 p-xl-2'>
+            <div className='d-flex h-100 px-2'>
               <div className='w-100 my-auto text-center'>
                 <h3 className='text-white mb-4'>
                   You stumbled upon a bad route, but since you're here... take a
