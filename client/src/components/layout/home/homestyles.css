@@ -1,4 +1,4 @@
-/* Alt Masthead for Homepage */
+
 .masthead2 {
   position: relative;
   width: 100%;
@@ -84,19 +84,56 @@
   border-bottom: 0.3rem solid rgba(0, 0, 0, 0.55);
 }
 
-.skills {
+.skills h1 {
   font-size: 3rem;
   font-family: 'Ubuntu', sans-serif;
 }
 
+.skills h3 {
+  font-size: 1.5rem;
+}
+
+.skills h5 {
+  font-size: 1rem;
+}
+
 @media (min-width: 768px) {
-  .skills {
+  .skills h1 {
     font-size: 3.5rem;
+  }
+  .skills h3 {
+    font-size: 1.75rem;
+  }
+  .skills h5 {
+    font-size: 1.25rem;
   }
 }
 
 @media (min-width: 992px) {
-  .skills {
+  .skills h1 {
     font-size: 4rem;
   }
+}
+
+.IconLinks a {
+  color: #585858;
+}
+.IconLinks a:hover,
+a:focus {
+  color: #161616;
+}
+
+.CustomMargin {
+  margin-bottom: 0rem;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .CustomMargin {
+    margin-top: 0.15rem;
+  }
+}
+
+.text-black-75 {
+  color: #585858;
 }
