@@ -65,7 +65,7 @@ const Portfolio = () => {
                     <p className='mb-3 text-white-50'>
                       Reach is a social media site with a variety of ways to
                       communicate with friends or meet new people. With posts,
-                      instant chat, video chat and more! You have the ability to
+                      instant chat, video chat and more, you have the ability to
                       create an account with backend password encryption and
                       customize your own profile to share interesting things
                       about yourself.
@@ -180,10 +180,10 @@ const Portfolio = () => {
                     <h4 className='text-white'>NPR News Scraper App</h4>
                     <p className='mb-3 text-white-50'>
                       This site scrapes news articles from NPRs text only news
-                      site. Then it saves them to a MongoDB Atlas database and
-                      then renders them onto the page for the users to view. You
-                      can then save or un-save articles. Once an article has
-                      been saved you can add a note which all gets saved to the
+                      site. It then saves them to a MongoDB Atlas database and
+                      renders them onto the page for the users to view. You can
+                      then save or un-save articles. Once an article has been
+                      saved you, can add a note which all gets saved to the
                       database.
                     </p>
                     <h6 className='text-white mb-3'>TECHNOLOGIES USED</h6>

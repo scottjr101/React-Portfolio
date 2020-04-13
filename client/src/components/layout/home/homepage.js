@@ -88,7 +88,7 @@ const Home = () => {
             </div>
             <Icons />
             <div className='row my-2 py-2 px-4'>
-              <h3 className='m-0'>My strengths</h3>
+              <h3 className='m-0'>My Strengths</h3>
             </div>
             <div className='row my-0 pt-1 pl-4 pl-md-5 pr-3'>
               <Icon icon={checkBold} height={25} />{' '}
@@ -105,7 +105,7 @@ const Home = () => {
             <div className='row my-0 pt-1 pl-4 pl-md-5 pr-3'>
               <Icon icon={checkBold} height={25} />{' '}
               <h5 className='CustomMargin pl-2 text-black-75'>
-                Fast Learner, Hard Worker
+                Hard Worker, Fast Learner
               </h5>
             </div>
           </div>

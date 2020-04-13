@@ -19,8 +19,8 @@ const Blog = () => {
               <div className='featured-text text-center text-lg-left'>
                 <h4>Blog Post</h4>
                 <p className='text-black-50 mb-0'>
-                  This is where I will discuss about my projects and new
-                  technologies I come across in more depth.
+                  This is where I will discuss my projects and new technologies
+                  I come across in more depth.
                 </p>
               </div>
             </div>
