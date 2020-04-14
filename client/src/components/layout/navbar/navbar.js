@@ -23,28 +23,42 @@ const Navbar = () => {
             aria-label='Toggle navigation'
           >
             Menu
-            <i id='NavMenu' className='fas fa-bars pl-1' />
-            {/* Skull Icon */}
           </button>
           <div className='collapse navbar-collapse' id='navbarResponsive'>
             <ul className='navbar-nav ml-auto'>
-              <li className='nav-item'>
-                <Link className='nav-link js-scroll-trigger' to='/home'>
+              <li
+                className='nav-item'
+                data-toggle='collapse'
+                data-target='.navbar-collapse.show'
+              >
+                <Link className='nav-link' to='/home'>
                   Home
                 </Link>
               </li>
-              <li className='nav-item'>
-                <Link className='nav-link js-scroll-trigger' to='/blog'>
+              <li
+                className='nav-item'
+                data-toggle='collapse'
+                data-target='.navbar-collapse.show'
+              >
+                <Link className='nav-link' to='/blog'>
                   Blog
                 </Link>
               </li>
-              <li className='nav-item'>
-                <Link className='nav-link js-scroll-trigger' to='/portfolio'>
+              <li
+                className='nav-item'
+                data-toggle='collapse'
+                data-target='.navbar-collapse.show'
+              >
+                <Link className='nav-link' to='/portfolio'>
                   Portfolio
                 </Link>
               </li>
-              <li className='nav-item'>
-                <a className='nav-link js-scroll-trigger' href='#contact'>
+              <li
+                className='nav-item'
+                data-toggle='collapse'
+                data-target='.navbar-collapse.show'
+              >
+                <a className='nav-link' href='#contact'>
                   Contact
                 </a>
               </li>
