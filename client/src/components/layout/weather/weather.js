@@ -17,7 +17,7 @@ const Weather = () => {
                     <div className='col px-3 text-white d-flex align-items-center justify-content-end'>
                       <img
                         className='weatherIcons'
-                        src={`http://download.spinetix.com/content/widgets/icons/weather/${data.weather[0].icon}.png`}
+                        src={`https://download.spinetix.com/content/widgets/icons/weather/${data.weather[0].icon}.png`}
                         alt='weather condition'
                       />
                     </div>
