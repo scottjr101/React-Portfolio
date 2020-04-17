@@ -51,7 +51,7 @@ const Home = () => {
       </section>
       {/* About Me Section */}
       <section className='bg-light py-5 px-2 px-md-5'>
-        <div className='container-fluid px-0'>
+        <div className='container-fluid px-2'>
           <div className='row mx-0 my-1 my-lg-3'>
             <div className='bg-black col-11 col-lg-8 col-xl-8 px-2 text-center text-xl-left mx-auto'>
               <div className='d-flex h-100 p-4'>
