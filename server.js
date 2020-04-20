@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors')
 const path = require('path');
 const axios = require('axios');
 require('dotenv').config();
@@ -13,6 +14,7 @@ const server = require('http').createServer(app);
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: false }));
+app.use(cors())
 
 // Define API routes here
 app.post('/weather', async (req, res) => {
