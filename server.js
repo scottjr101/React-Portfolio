@@ -37,7 +37,7 @@ app.post('/weather', async (req, res) => {
   }
 });
 
-app.post('/weather-zipcode', async (req, res) => {
+app.post('/zipcode', async (req, res) => {
   // Pull Lat and Long out of HTTP headers
   const { zipcode } = req.body;
   try {
