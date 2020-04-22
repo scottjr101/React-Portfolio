@@ -13,8 +13,10 @@ const server = require('http').createServer(app);
 
 var corsOptions = {
   origin: 'https://symptomatic-cat.surge.sh/',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  preflightContinue: false,
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
