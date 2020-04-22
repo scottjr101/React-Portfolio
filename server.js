@@ -11,13 +11,10 @@ const PORT = process.env.PORT || 5000;
 
 const server = require('http').createServer(app);
 
-var corsOptions = {
-  origin: 'https://symptomatic-cat.surge.sh/',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  allowedHeaders: '*',
-  preflightContinue: false,
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
+// const corsOptions = {
+//   origin: 'https://symptomatic-cat.surge.sh/',
+//   optionsSuccessStatus: 200,
+// };
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -25,7 +22,7 @@ app.use(express.json({ extended: false }));
 // app.use(cors());
 
 // Define API routes here
-app.post('/weather', cors(corsOptions), async (req, res) => {
+app.post('/weather', cors(), async (req, res) => {
   // Pull Lat and Long out of HTTP headers
   const { latitude, longitude } = req.body;
   try {
@@ -45,7 +42,7 @@ app.post('/weather', cors(corsOptions), async (req, res) => {
   }
 });
 
-app.post('/zipcode', cors(corsOptions), async (req, res) => {
+app.post('/zipcode', cors(), async (req, res) => {
   // Pull Lat and Long out of HTTP headers
   const { zipcode } = req.body;
   try {
