@@ -27,25 +27,25 @@ app.use(function(req, res, next) {
 });
 
 // Define API routes here
-app.post('/weather', async (req, res) => {
-  // Pull Lat and Long out of HTTP headers
-  const { latitude, longitude } = req.body;
-  try {
-    const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${ApiKey}`
-    );
-    const data = await response.data;
-    // Debugging
-    console.log(`OpenWeatherMap API Call Successful!`);
-    // Send weather data from Openweather back to client side
-    return res.json(data);
-    // Catch any errors
-  } catch (error) {
-    console.log(
-      `OpenWeatherMap API Call Failed, This Is Why ==> '${error.response.statusText}'`
-    );
-  }
-});
+// app.post('/weather', async (req, res) => {
+//   // Pull Lat and Long out of HTTP headers
+//   const { latitude, longitude } = req.body;
+//   try {
+//     const response = await axios.get(
+//       `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${ApiKey}`
+//     );
+//     const data = await response.data;
+//     // Debugging
+//     console.log(`OpenWeatherMap API Call Successful!`);
+//     // Send weather data from Openweather back to client side
+//     return res.json(data);
+//     // Catch any errors
+//   } catch (error) {
+//     console.log(
+//       `OpenWeatherMap API Call Failed, This Is Why ==> '${error.response.statusText}'`
+//     );
+//   }
+// });
 
 app.post('/zipcode', async (req, res) => {
   // Pull Lat and Long out of HTTP headers
