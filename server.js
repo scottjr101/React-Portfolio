@@ -14,10 +14,10 @@ const server = require('http').createServer(app);
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: false }));
-// app.use(cors())
+app.use(cors())
 
 // Define API routes here
-app.post('/weather', cors(), async (req, res) => {
+app.post('/weather', async (req, res) => {
   // Pull Lat and Long out of HTTP headers
   const { latitude, longitude } = req.body;
   try {
@@ -37,7 +37,7 @@ app.post('/weather', cors(), async (req, res) => {
   }
 });
 
-app.post('/zipcode', cors(), async (req, res) => {
+app.post('/zipcode', async (req, res) => {
   // Pull Lat and Long out of HTTP headers
   const { zipcode } = req.body;
   try {
