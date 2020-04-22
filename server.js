@@ -14,12 +14,12 @@ const server = require('http').createServer(app);
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: false }));
-// app.use(cors());
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next()
-});
+app.use(cors());
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next()
+// });
 
 // Define API routes here
 app.post('/weather', async (req, res) => {
@@ -43,7 +43,7 @@ app.post('/weather', async (req, res) => {
 });
 
 app.post('/zipcode', async (req, res) => {
-  // Pull Lat and Long out of HTTP headers
+  // Pull zipcode out of HTTP headers
   const { zipcode } = req.body;
   try {
     const response = await axios.get(
