@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors');
+// const cors = require('cors');
 const path = require('path');
 const axios = require('axios');
 require('dotenv').config();
@@ -14,7 +14,7 @@ const server = require('http').createServer(app);
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: false }));
-app.use(cors());
+// app.use(cors());
 // app.use(function(req, res, next) {
 //   res.header("Access-Control-Allow-Origin", "*");
 //   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
