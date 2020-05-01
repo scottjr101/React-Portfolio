@@ -62,14 +62,14 @@ const Home = () => {
                     frameworks. I continue to thrive in constantly changing
                     environments. My work reflects my ability to provide
                     efficient and clean code. I currently live Atlanta, Ga and
-                    I'm looking for a coding job.
+                    I'm looking for a coding/tech support job.
                   </p>
                   <h3 className='text-white m-0'>Interest</h3>
                   <p className='text-white-50 mb-5 mb-xl-0 mt-2'>
                     Aside from spending most of time building new React
                     projects, I enjoy relaxing at home with my wife and seven
-                    animals! We love to watch comedy and cooking shows like
-                    Community, 30 Rock, LetterKenny, and TopChef.
+                    animals! All the rest of my time is spent finding new ways
+                    to use my Raspberry Pi 4.
                   </p>
                 </div>
               </div>
